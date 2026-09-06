@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ritzcraft Pools and Pavers, Inc. | Custom Pools and Outdoor Living in Sarasota Florida</title>
+<meta name="description" content="Homeowners get expert guidance and custom solutions for their outdoor space. Call today for a free consultation.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--accent:#14B8A6;--accent-dark:#0F766E;--ink:#0B1F2A;--tint:#CCFBF1;--muted:#475569;--bg:#ffffff;--line:#E2E8F0}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Outfit,Inter,sans-serif;line-height:1.1;letter-spacing:-.01em}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.preview-bar{background:var(--ink);color:#fff;font-size:13px;text-align:center;padding:8px 12px}
+.preview-bar b{color:var(--accent)}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.logo{font-family:Outfit;font-weight:700;font-size:20px;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nav-links{display:none;gap:22px;font-size:15px;font-weight:500}
+.nav-links a{text-decoration:none;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 20px;border-radius:10px;font-weight:600;text-decoration:none;font-size:15px;border:1px solid transparent;transition:transform .12s ease,background .12s ease}
+.btn:active{transform:scale(.98)}
+.btn-primary{background:var(--accent);color:#fff}.btn-primary:hover{background:var(--accent-dark)}
+.btn-ghost{background:#fff;border-color:var(--line);color:var(--ink)}
+.btn-call{padding:10px 14px;white-space:nowrap}.btn-call .num{display:none}.logo{max-width:60%}
+@media(min-width:760px){.btn-call .num{display:inline}.logo{max-width:none}}
+.hero{position:relative;min-height:78vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,var(--accent-dark),var(--ink))}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-shade{position:absolute;inset:0;background:linear-gradient(to top,rgba(5,15,30,.86) 0%,rgba(5,15,30,.35) 55%,rgba(5,15,30,.15) 100%)}
+.hero-inner{position:relative;padding:72px 0 56px;max-width:720px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;background:rgba(255,255,255,.14);padding:6px 12px;border-radius:999px;margin-bottom:18px}
+.hero h1{font-size:clamp(34px,6vw,58px);font-weight:700;margin-bottom:14px}
+.hero p{font-size:clamp(16px,2.2vw,20px);opacity:.92;max-width:600px;margin-bottom:26px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero .btn-ghost{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.35);color:#fff}
+section{padding:64px 0}
+.section-head{max-width:640px;margin-bottom:34px}
+.section-head h2{font-size:clamp(26px,4vw,38px);margin-bottom:10px}
+.section-head p{color:var(--muted);font-size:17px}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;background:var(--tint)}
+.gallery img:first-child{grid-column:span 2;aspect-ratio:16/9}
+.cards{display:grid;grid-template-columns:1fr;gap:14px}
+.card{border:1px solid var(--line);border-radius:14px;padding:22px;background:#fff}
+.card h3{font-size:18px;margin-bottom:6px}
+.card p{color:var(--muted);font-size:15px}
+.card .n{display:inline-block;width:34px;height:34px;border-radius:9px;background:var(--tint);color:var(--accent-dark);font-weight:700;text-align:center;line-height:34px;margin-bottom:12px;font-family:Outfit}
+.band{background:var(--tint)}
+.split{display:grid;grid-template-columns:1fr;gap:28px;align-items:center}
+.split img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px}
+.split p{color:var(--muted);margin-bottom:12px;font-size:16px}
+.reviews{display:flex;flex-wrap:wrap;gap:22px;align-items:center;justify-content:space-between;border:1px solid var(--line);border-radius:16px;padding:26px}
+.reviews .stars{color:#F59E0B;font-size:22px;letter-spacing:2px}
+.reviews .big{font-family:Outfit;font-size:40px;font-weight:700;line-height:1}
+.reviews small{color:var(--muted);display:block;margin-top:4px}
+.faq details{border-bottom:1px solid var(--line);padding:16px 0}
+.faq summary{font-weight:600;cursor:pointer;font-size:16px;list-style:none;display:flex;justify-content:space-between;align-items:center}
+.faq summary::after{content:"+";color:var(--accent);font-size:22px;font-weight:400}
+.faq details[open] summary::after{content:"–"}
+.faq p{color:var(--muted);padding-top:10px;font-size:15px}
+.quote{background:var(--ink);color:#fff}
+.quote .inner{display:grid;grid-template-columns:1fr;gap:28px}
+.quote h2{font-size:clamp(26px,4vw,38px);margin-bottom:10px}
+.quote p{opacity:.85;margin-bottom:18px}
+form{display:grid;gap:10px}
+input,textarea,select{width:100%;padding:13px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08);color:#fff;font:inherit}
+input::placeholder,textarea::placeholder{color:rgba(255,255,255,.6)}
+textarea{min-height:110px;resize:vertical}
+footer{padding:30px 0;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer .row{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
+.sticky-call{position:fixed;left:12px;right:12px;bottom:12px;z-index:30;display:flex;gap:10px}
+.sticky-call .btn{flex:1;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+@media(min-width:760px){.nav-links{display:flex}.cards{grid-template-columns:repeat(3,1fr)}.gallery{grid-template-columns:repeat(3,1fr)}.gallery img:first-child{grid-column:span 3;aspect-ratio:21/9}.split{grid-template-columns:1.1fr 1fr}.quote .inner{grid-template-columns:1fr 1fr}.sticky-call{display:none}body{padding-bottom:0}}
+@media(max-width:759px){body{padding-bottom:76px}}
+</style>
+</head>
+<body>
+<div class="preview-bar">Preview of a new site for <b>Ritzcraft Pools and Pavers, Inc.</b>, built by Poolside Pages. Not live. Nothing on the current site has changed.</div>
+<header><div class="wrap nav">
+  <a class="logo" href="#top">Ritzcraft Pools and Pavers, Inc.</a>
+  <nav class="nav-links"><a href="#work">Our work</a><a href="#services">Services</a><a href="#about">About</a><a href="#faq">FAQ</a></nav>
+  <a class="btn btn-primary btn-call" href="tel:9415387671">Call<span class="num">&nbsp;(941) 538-7671</span></a>
+</div></header>
+
+<section class="hero" id="top">
+  <img class="hero-img" src="https://ritzcraftpoolsandpavers.com/wp-content/uploads/2022/08/pool-renovation-sarasota-fl-480x480.png" alt="Ritzcraft Pools and Pavers, Inc. project">
+  <div class="hero-shade"></div>
+  <div class="wrap"><div class="hero-inner">
+    <span class="eyebrow">Sarasota, Manatee, Charlotte, and surrounding Florida areas</span>
+    <h1>Custom Pools and Outdoor Living in Sarasota Florida</h1>
+    <p>Homeowners get expert guidance and custom solutions for their outdoor space. Call today for a free consultation.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#quote">Request a quote</a>
+      <a class="btn btn-ghost" href="tel:9415387671">Call (941) 538-7671</a>
+    </div>
+  </div></div>
+</section>
+
+<section id="work"><div class="wrap">
+  <div class="section-head"><h2>Recent work</h2><p>Pools we designed and built for homeowners in Sarasota, Manatee, Charlotte, and surrounding Florida areas.</p></div>
+  <div class="gallery"><img src="https://ritzcraftpoolsandpavers.com/wp-content/uploads/2022/10/fiberglass-pool-designers-sarasota-480x480.png" alt="Ritzcraft Pools and Pavers, Inc. project 1" loading="lazy"><img src="https://ritzcraftpoolsandpavers.com/wp-content/uploads/2022/08/inground-pools-sarasota-fl-480x480.png" alt="Ritzcraft Pools and Pavers, Inc. project 2" loading="lazy"><img src="https://ritzcraftpoolsandpavers.com/wp-content/uploads/2022/08/swimming-pool-builders-bradenton-fl.jpg" alt="Ritzcraft Pools and Pavers, Inc. project 3" loading="lazy"><img src="https://ritzcraftpoolsandpavers.com/wp-content/uploads/2022/08/swimming-pool-builders-sarasota-fl.jpg" alt="Ritzcraft Pools and Pavers, Inc. project 4" loading="lazy"><img src="https://ritzcraftpoolsandpavers.com/wp-content/uploads/2022/08/swimming-pool-builder-bradenton-fl.jpg" alt="Ritzcraft Pools and Pavers, Inc. project 5" loading="lazy"><img src="https://ritzcraftpoolsandpavers.com/wp-content/uploads/2022/08/swimming-pool-builder-sarasota-fl.jpg" alt="Ritzcraft Pools and Pavers, Inc. project 6" loading="lazy"></div>
+</div></section>
+
+<section id="services" class="band"><div class="wrap">
+  <div class="section-head"><h2>What we do</h2><p>Every project is planned, permitted and built by our own team, start to finish.</p></div>
+  <div class="cards"><div class="card"><span class="n">1</span><h3>New Pool Construction</h3><p>Custom gunite and shotcrete pools built to your vision. Fully customizable design options for relaxation or entertaining.</p></div><div class="card"><span class="n">2</span><h3>Pool Renovation</h3><p>Bring new life to your old pool. From interior upgrades to dramatic changes, turn dated to chic.</p></div><div class="card"><span class="n">3</span><h3>Gunite Pools</h3><p>Specializing in gunite and shotcrete pool construction, bringing your vision to life with experience and equipment.</p></div><div class="card"><span class="n">4</span><h3>Fiberglass Pools</h3><p>Offering fiberglass pool options, providing choices based on your needs and preferences.</p></div><div class="card"><span class="n">5</span><h3>Pool Upgrades</h3><p>Enhance your pool with interior upgrades, water features, sun shelves, and benches for a fresh look.</p></div><div class="card"><span class="n">6</span><h3>Swim Spa</h3><p>Providing swim spa solutions to create the perfect pool that elevates your outdoor space.</p></div></div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="section-head"><h2>Why homeowners choose Ritzcraft Pools and Pavers, Inc.</h2></div>
+  <div class="cards"><div class="card"><h3>Trusted Pool Builder</h3><p>Our dedication to customer satisfaction has made us a trusted pool builder for homeowners in the region.</p></div><div class="card"><h3>Expert Team</h3><p>Our seasoned team of pool design and construction experts guides you through each phase of the process.</p></div><div class="card"><h3>Custom Solutions</h3><p>We design and build custom swimming pools, pavers, and outdoor living spaces based on your lifestyle.</p></div></div>
+  <div class="reviews" style="margin-top:28px">
+    <div><div class="stars">★★★★☆</div><small>Google rating</small></div>
+    <div><span class="big">4.2</span><small>94 reviews</small></div>
+    <a class="btn btn-ghost" href="https://www.google.com/maps/place/?q=place_id:ChIJMczMlDMXw4gRgbRz9QjZLZc" target="_blank" rel="noopener">Read reviews on Google</a>
+  </div>
+</div></section>
+
+<section id="about" class="band"><div class="wrap split">
+  <img src="https://ritzcraftpoolsandpavers.com/wp-content/uploads/2022/10/fiberglass-pool-designers-sarasota-480x480.png" alt="Ritzcraft Pools and Pavers, Inc." loading="lazy">
+  <div><div class="section-head"><h2>About Ritzcraft Pools and Pavers, Inc.</h2></div><p>Ritzcraft Pools and Pavers specializes in residential new pool construction and installation, as well as large-scale pool renovations. Our expert team assists every step of the way to turn your pool dreams into reality.</p><p>As your premier pool builder, we offer pool design and construction solutions to create the perfect pool that elevates your outdoor space. We build, install, and remodel pools based on your lifestyle and style preferences.</p>
+  <p><strong>Service area:</strong> Sarasota, Manatee, Charlotte, and surrounding Florida areas</p></div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <div class="section-head"><h2>Questions we get every week</h2></div>
+  <div class="faq"><details><summary>What is the typical timeline for new pool construction?</summary><p>The timeline can vary depending on factors like design complexity, permitting, and weather. We work to complete projects efficiently while maintaining quality.</p></details><details><summary>Can I customize my pool design?</summary><p>Absolutely. We offer fully customizable design options to create a beautiful space for relaxation or entertaining, tailored to your unique vision.</p></details><details><summary>What is involved in a pool renovation?</summary><p>Pool renovation can include interior upgrades, adding water features, installing sun shelves and benches, or more dramatic changes to refresh your old pool.</p></details></div>
+</div></section>
+
+<section class="quote" id="quote"><div class="wrap inner">
+  <div><h2>Request a quote</h2><p>Tell us about your backyard and what you have in mind. We reply within one business day, or call <a href="tel:9415387671">(941) 538-7671</a>.</p>
+  <p style="opacity:.7">1144 Tallevast Rd Ste 101, Sarasota, FL 34243</p></div>
+  <form action="mailto:info.ritzcraft941@gmail.com?subject=Quote%20request%20from%20the%20website" method="get" onsubmit="this.action='mailto:info.ritzcraft941@gmail.com?subject=Quote%20request%20from%20the%20website'">
+    <input name="name" placeholder="Your name" required><input name="phone" placeholder="Phone" type="tel"><input name="city" placeholder="City or neighborhood">
+    <textarea name="body" placeholder="What are you thinking? Size, features, timing."></textarea>
+    <button class="btn btn-primary" type="submit">Request a quote</button>
+  </form>
+</div></section>
+
+<footer><div class="wrap row"><span>© 2026 Ritzcraft Pools and Pavers, Inc.</span><a href="tel:9415387671">(941) 538-7671</a><span>Preview by Poolside Pages</span></div></footer>
+<div class="sticky-call"><a class="btn btn-primary" href="tel:9415387671">Call now</a><a class="btn btn-ghost" href="#quote">Request a quote</a></div>
+</body></html>

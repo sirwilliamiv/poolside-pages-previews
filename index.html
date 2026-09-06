@@ -30,19 +30,21 @@ header{border-bottom:1px solid var(--line)}
 .hero p.lead{font-size:21px;margin:22px 0 28px;color:var(--muted)}
 .hero .actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
 .hero .actions small{display:block;width:100%;color:var(--muted);font-size:15px;margin-top:6px}
-.phones{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:end}
-.phone{position:relative}
-.phone .screen{display:block;width:100%;aspect-ratio:390/780;object-fit:cover;object-position:top;border-radius:26px;border:8px solid var(--ink);background:#fff;box-shadow:0 30px 60px -30px rgba(18,48,63,.45)}
-.phone figcaption{margin-top:12px;font-size:15px;color:var(--muted)}
-.phone figcaption b{color:var(--ink);font-weight:600;display:block;font-size:16px}
-.phone.after .screen{border-color:var(--pool-deep)}
+.device-stack{position:relative;padding-bottom:36px}
+.laptop{margin:0;border-radius:14px;border:10px solid var(--ink);border-bottom-width:22px;background:#fff;overflow:hidden;box-shadow:0 40px 70px -40px rgba(18,48,63,.5)}
+.laptop img{display:block;width:100%;aspect-ratio:1440/900;object-fit:cover;object-position:top}
+.phone-over{position:absolute;right:-6px;bottom:0;width:31%;margin:0;border-radius:22px;border:6px solid var(--ink);background:#fff;overflow:hidden;box-shadow:0 30px 50px -30px rgba(18,48,63,.6)}
+.phone-over img{display:block;width:100%;aspect-ratio:390/780;object-fit:cover;object-position:top}
+.device-stack figcaption{position:absolute;left:0;bottom:6px;font-size:15px;color:var(--muted);max-width:60%}
+.gallery{display:grid;grid-template-columns:1fr;gap:28px;max-width:1000px}
+.phone{margin:0}
+.phone .screen{display:block;width:100%;max-width:340px;aspect-ratio:390/780;object-fit:cover;object-position:top;border-radius:26px;border:8px solid var(--ink);background:#fff;box-shadow:0 30px 60px -30px rgba(18,48,63,.45)}
+.phone figcaption{margin-top:14px;font-size:16px;color:var(--muted);max-width:340px}
+.phone figcaption b{color:var(--ink);font-weight:600;display:block;font-size:17px;margin-bottom:2px}
+.note{color:var(--muted);margin-top:28px;font-size:17px}
 section{padding:72px 0}
 .band{background:var(--concrete)}
 .section-head{margin-bottom:36px}.section-head p{color:var(--muted);font-size:19px;margin-top:10px}
-.examples{display:grid;grid-template-columns:1fr;gap:44px}
-.example{display:grid;grid-template-columns:1fr;gap:18px;align-items:start}
-.example .meta h3{font-size:24px}.example .meta p{color:var(--muted);font-size:17px}
-.example .phones{max-width:520px}
 .steps{display:grid;grid-template-columns:1fr;gap:28px;counter-reset:step}
 .step{padding-left:56px;position:relative}
 .step::before{counter-increment:step;content:counter(step);position:absolute;left:0;top:-2px;width:40px;height:40px;border-radius:50%;background:var(--ink);color:#fff;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:18px;display:flex;align-items:center;justify-content:center}
@@ -67,8 +69,7 @@ section{padding:72px 0}
 .cta-final{background:var(--ink);color:#fff;padding:72px 0}
 .cta-final h2{color:#fff}.cta-final p{color:rgba(255,255,255,.8);margin:14px 0 26px}
 footer{padding:32px 0;font-size:15px;color:var(--muted)}footer p{max-width:none}
-@media(min-width:820px){.nav nav{display:flex}.hero-grid{grid-template-columns:1.05fr 1fr}.examples{grid-template-columns:1fr}.example{grid-template-columns:260px 1fr}.steps{grid-template-columns:repeat(3,1fr)}.included{columns:2}.pricing{grid-template-columns:1fr 1fr}}
-@media(min-width:1000px){.examples{grid-template-columns:1fr 1fr}.example{grid-template-columns:1fr}}
+@media(min-width:820px){.nav nav{display:flex}.hero-grid{grid-template-columns:1fr 1.1fr}.gallery{grid-template-columns:repeat(3,1fr)}.steps{grid-template-columns:repeat(3,1fr)}.included{columns:2}.pricing{grid-template-columns:1fr 1fr}}
 </style></head><body>
 <header><div class="wrap nav"><a class="brand" href="/">Poolside Pages</a><nav><a href="#examples">Examples</a><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="#questions">Questions</a></nav><a class="btn btn-sun" href="mailto:hello@poolsidepages.com?subject=Build%20my%20homepage%20preview&body=Company%3A%0AWebsite%3A%0APhone%3A">Get a free preview</a></div></header>
 
@@ -76,21 +77,23 @@ footer{padding:32px 0;font-size:15px;color:var(--muted)}footer p{max-width:none}
 <div>
 <h1>See your new website before you pay for it.</h1>
 <p class="lead">We build pool builders and outdoor trades a new homepage from the photos and words already on their site, then send the link. Like it, and it's live on your domain in two business days. Don't, and nothing changed.</p>
-<div class="actions"><a class="btn btn-sun" href="mailto:hello@poolsidepages.com?subject=Build%20my%20homepage%20preview&body=Company%3A%0AWebsite%3A%0APhone%3A">Get a free preview</a><a class="btn btn-line" href="#examples">See real examples</a><small>Email your company name and website. The preview usually takes a day.</small></div>
+<div class="actions"><a class="btn btn-sun" href="mailto:hello@poolsidepages.com?subject=Build%20my%20homepage%20preview&body=Company%3A%0AWebsite%3A%0APhone%3A">Get a free preview</a><a class="btn btn-line" href="#examples">See our work</a><small>Email your company name and website. The preview usually takes a day.</small></div>
 </div>
-<div class="phones">
-<figure class="phone before"><img class="screen" src="/assets/before-1.jpg" alt="A pool builder's current website on a phone" loading="eager"><figcaption><b>Their site today</b>Pool builder, Tampa</figcaption></figure>
-<figure class="phone after"><img class="screen" src="/assets/after-1.jpg" alt="The preview we built from their own photos" loading="eager"><figcaption><b>The preview we sent</b>Built from their own photos</figcaption></figure>
+<div class="device-stack">
+<figure class="laptop"><img src="/assets/shot-d1.jpg" alt="A homepage we built for a Tampa pool builder, on a laptop" loading="eager"></figure>
+<figure class="phone-over"><img src="/assets/shot-m1.jpg" alt="The same homepage on a phone" loading="eager"></figure>
+<figcaption>A homepage we built for a pool builder in Tampa, from their own photos.</figcaption>
 </div>
 </div></section>
 
 <section id="examples" class="band"><div class="wrap">
-<div class="section-head"><h2>Real previews, built before anyone asked</h2><p>Each of these was made from a builder's existing site: their photos, their services, their phone number. Nothing invented.</p></div>
-<div class="examples">
-<div class="example"><div class="meta"><h3>Pool builder, Tampa</h3><p>Home page loads in seconds on a phone. Call button stays on screen while they scroll.</p></div><div class="phones"><figure class="phone before"><img class="screen" src="/assets/before-2.jpg" alt="Before" loading="lazy"><figcaption><b>Before</b></figcaption></figure><figure class="phone after"><img class="screen" src="/assets/after-2.jpg" alt="After" loading="lazy"><figcaption><b>After</b></figcaption></figure></div></div>
-<div class="example"><div class="meta"><h3>Pool builder, Tampa</h3><p>Their Google rating and review count on the page, with a link to read them.</p></div><div class="phones"><figure class="phone before"><img class="screen" src="/assets/before-3.jpg" alt="Before" loading="lazy"><figcaption><b>Before</b></figcaption></figure><figure class="phone after"><img class="screen" src="/assets/after-3.jpg" alt="After" loading="lazy"><figcaption><b>After</b></figcaption></figure></div></div>
-<div class="example"><div class="meta"><h3>Pool builder, St. Petersburg</h3><p>A one-screen quote form that emails the owner. No account, no app, no chatbot.</p></div><div class="phones"><figure class="phone before"><img class="screen" src="/assets/before-4.jpg" alt="Before" loading="lazy"><figcaption><b>Before</b></figcaption></figure><figure class="phone after"><img class="screen" src="/assets/after-4.jpg" alt="After" loading="lazy"><figcaption><b>After</b></figcaption></figure></div></div>
+<div class="section-head"><h2>Built from what the builder already had</h2><p>Each of these started from a company's existing site and Google listing: their photos, their services, their phone number, their rating. Nothing invented, nothing stock.</p></div>
+<div class="gallery">
+<figure class="phone"><img class="screen" src="/assets/shot-m2.jpg" alt="Homepage for a pool builder in Tampa" loading="lazy"><figcaption><b>Pool builder, Tampa</b>Custom inground pools. Quote form and tap-to-call above the fold.</figcaption></figure>
+<figure class="phone"><img class="screen" src="/assets/shot-m3.jpg" alt="Homepage for a pool builder in St. Petersburg" loading="lazy"><figcaption><b>Pool builder, St. Petersburg</b>Construction and service. Their 5-star Google rating on the page.</figcaption></figure>
+<figure class="phone"><img class="screen" src="/assets/shot-m4.jpg" alt="Homepage for a pool service company in St. Petersburg" loading="lazy"><figcaption><b>Pool service, St. Petersburg</b>Weekly service and repairs. One-screen quote form to the owner's email.</figcaption></figure>
 </div>
+<p class="note">Want to see one at full size? Ask for your own. The preview is the real thing, not a mockup.</p>
 </div></section>
 
 <section id="how"><div class="wrap">
